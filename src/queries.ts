@@ -10,7 +10,7 @@ export const userInfoQuery = `
 export const createContributedRepoQuery = (username: string) => `
   query {
     user(login: "${username}") {
-      repositoriesContributedTo(last: 100) {
+      repositoriesContributedTo(last: 500) {
         nodes {
           name
           owner {
